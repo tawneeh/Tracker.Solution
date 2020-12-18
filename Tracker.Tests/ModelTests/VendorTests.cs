@@ -69,7 +69,7 @@ namespace Tracker.Tests
       Vendor newVendor = new Vendor(vendorName, vendorDescription);
       newVendor.AddOrder(newOrder);
       List<Order> result = newVendor.Orders;
-      Assert.AreEqual(newList, result);
+      CollectionAssert.AreEqual(newList, result);
     }
 
   }
