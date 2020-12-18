@@ -54,7 +54,7 @@ namespace Tracker.Tests
       string price2 = "$5";
       string date2 = "December 18, 2020";
       Order newOrder2 = new Order(title2, description2, price2, date2);
-      Order result = Order.Find(1);
+      Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }
 
