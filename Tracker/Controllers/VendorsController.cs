@@ -28,7 +28,7 @@ namespace Tracker.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpPost("/vendors/{vendorId}/orders")] // not showing dynamic order list!
+    [HttpPost("/vendors/{vendorId}/orders")]
     public ActionResult Create(int vendorId, string title, string description, string price, string date)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
