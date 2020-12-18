@@ -6,7 +6,7 @@ namespace Tracker.Models
   {
     public string Title { get; set; }
     public string Description { get; set; }
-    public string Price { get; set; } // set as string, can always Parse later...
+    public string Price { get; set; }
     public string Date { get; set; }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> {}; 
