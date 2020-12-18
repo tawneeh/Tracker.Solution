@@ -13,5 +13,11 @@ namespace Tracker.Tests
       Order.ClearAll();
     }
 
+    [TestMethod]
+    public void OrderConstructor_CreatesInstanceOfOrder_Order()
+    {
+      Order newOrder = new Order("Order 1", "One item", 5, "December 18, 2020");
+      Assert.AreEqual(typeof(Vendor), newOrder.GetType());
+    }
   }
 }
