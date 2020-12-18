@@ -51,7 +51,7 @@ namespace Tracker.Tests
       string description2 = "Test Description 2";
       Vendor newVendor1 = new Vendor(vendorName1, description1);
       Vendor newVendor2 = new Vendor(vendorName2, description2);
-      Vendor result = Vendor.Find(2);
+      Vendor result = Vendor.Find(1);
       Assert.AreEqual(newVendor1, result);
     }
 
