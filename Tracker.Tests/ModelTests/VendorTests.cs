@@ -21,6 +21,14 @@ namespace Tracker.Tests
     }
 
     [TestMethod]
+    public void GetAll_ReturnsEmptyList_VendorList()
+    {
+      List<Vendor> newList = new List<Vendor> { };
+      List<Vendor> result = Vendor.GetAll();
+      Assert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
       string vendorName1 = "Test Vendor";
