@@ -28,5 +28,18 @@ namespace Tracker.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      string title = "Order 1";
+      string description = "One item";
+      string price = "$5";
+      string date = "December 18, 2020";
+      Order newOrder = new Order(title, description, price, date);
+      List<Order> newList = new List<Order> { newOrder };
+      List<Order> result = Order.GetAll();
+      Assert.AreEqual(newList, result);
+    }
+
   }
 }
