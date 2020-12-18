@@ -19,10 +19,10 @@ namespace Tracker.Controllers
     {
       Order order = Order.Find(orderId);
       Vendor vendor = Vendor.Find(vendorId);
-      Dictionary<string, object> track = new Dictionary<string, object>();
-      track.Add("order", order);
-      track.Add("vendor", vendor);
-      return View(track);
+      Dictionary<string, object> tracker = new Dictionary<string, object>();
+      tracker.Add("order", order);
+      tracker.Add("vendor", vendor);
+      return View(tracker);
     }
 
   }
