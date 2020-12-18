@@ -6,12 +6,12 @@ namespace Tracker.Models
   {
     public string Title { get; set; }
     public string Description { get; set; }
-    public int Price { get; set; } // set as string, can always Parse later...
+    public string Price { get; set; } // set as string, can always Parse later...
     public string Date { get; set; }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> {}; 
 
-    public Order(string title, string description, int price, string date)
+    public Order(string title, string description, string price, string date)
     {
       Title = title;
       Description = description;
@@ -21,5 +21,14 @@ namespace Tracker.Models
       Id = _instances.Count; 
     }
 
+    public static List<Order> GetAll()
+    {
+      return null;
+    }   
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
   }
 }
