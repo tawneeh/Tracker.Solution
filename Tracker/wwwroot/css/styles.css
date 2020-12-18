@@ -5,3 +5,21 @@ body {
 h1 {
   text-align: center;
 }
+
+h4 {
+  font-style: italic;
+  color: purple;
+}
+
+.button {
+  background-color: lightblue;
+  color: black;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
