@@ -28,17 +28,17 @@ namespace Tracker.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpPost()]
-    public ActionResult Create(int vendorId, string orderTitle, string orderDescription, string orderPrice, string orderDate)
+    [HttpPost("/vendors/{vendorId}/orders")] // not showing dynamic order list!
+    public ActionResult Create(int vendorId, string title, string description, string price, string date)
     {
-      Dictionary<string, object> tracker = new Dictionary<string, object>();
+      Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor specificVendor = Vendor.Find(vendorId);
-      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+      Order newOrder = new Order(title, description, price, date);
       specificVendor.AddOrder(newOrder);
       List<Order> vendorOrders = specificVendor.Orders;
-      tracker.Add("orders", vendorOrders);
-      tracker.Add("vendor", specificVendor);
-      return View("Show", tracker);
+      model.Add("orders", vendorOrders);
+      model.Add("vendor", specificVendor);
+      return View("Show", model);
     }
 
     [HttpGet("/vendors/{id}")]
