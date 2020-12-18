@@ -25,7 +25,7 @@ namespace Tracker.Tests
     {
       List<Vendor> newList = new List<Vendor> { };
       List<Vendor> result = Vendor.GetAll();
-      Assert.AreEqual(newList, result);
+      CollectionAssert.AreEqual(newList, result);
     }
 
     [TestMethod]
