@@ -6,8 +6,12 @@ using System;
 namespace Tracker.Tests
 {
   [TestClass]
-  public class OrderTests
+  public class OrderTests : IDisposable
   {
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
 
   }
 }
