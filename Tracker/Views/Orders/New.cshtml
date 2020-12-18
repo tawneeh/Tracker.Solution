@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+
+<h1>Add a new Order to @Model.Name</h1>
+
+<h2>Is this really where we make new orders???</h2> <!-- double check this -->
+
+<form action="/vendors/@Model.Id/orders" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="title">Order Title</label>
+  <input id="title" name="title" type="text">
+  <label for="description">Order Description</label>
+  <input id="description" name="description" type="text">
+  <label for="price">Order Price</label>
+  <input id="price" name="price" type="text">
+  <label for="date">Order Date</label>
+  <input id="date" name="date" type="text">
+  <button type='submit'>Add</button>
+</form>
