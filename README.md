@@ -7,7 +7,7 @@
 
 ## Description
 
-This application will allow a user, Pierre, to add vendors to a list and view their specific orders on a detailed page. 
+This application will allow a user, Pierre, to add vendors to a list and view their specific orders on a detail page. 
 
 ## Setup/Installation Requirements
 
@@ -16,12 +16,12 @@ Software Requirements
 * A code editor; I prefer VSCode
 
 Open by Downloading or Cloning
-* Navigate to <GITHUB REPO URL>
+* Navigate to <https://github.com/tawneeh/Tracker.Solution.git>
 * Download this repository to your computer by clicking the green Code button and 'Download Zip'
 * Or clone the repository
 
 Setup Instructions
-* Navigate to the main project directory and type `dotnet restore` into the terminal
+* Navigate to the Tracker project directory and type `dotnet restore` into the terminal
 * Then, type `dotnet build` into the terminal followed by `dotnet run`
 * Peruse this application at your leisure 
 
