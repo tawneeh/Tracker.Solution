@@ -14,15 +14,15 @@ namespace Tracker.Controllers
       return View(vendor);
     }
 
-    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")] // not showing dynamic order details
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
       Vendor vendor = Vendor.Find(vendorId);
-      Dictionary<string, object> tracker = new Dictionary<string, object>();
-      tracker.Add("order", order);
-      tracker.Add("vendor", vendor);
-      return View(tracker);
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      model.Add("order", order);
+      model.Add("vendor", vendor);
+      return View(model);
     }
 
   }
