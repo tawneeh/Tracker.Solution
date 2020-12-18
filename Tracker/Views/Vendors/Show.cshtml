@@ -1,13 +1,17 @@
 <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
 
-<h3>Below are all the Orders for this Vendor:</h3>
+@using Tracker.Models;
 
-<ul>
+<h3>Below are all the Orders for @Model["vendor"].Name</h3>
+
+<p>Vendor Description: @Model["vendor"].Description</p>
+
+<ol>
 @foreach (var order in @Model["orders"])
 {
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title not showing</a></li>
 }
-</ul>
+</ol>
 
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new Order</a></p>
 <p><a href='/vendors'>Return to Vendor list</a></p>
