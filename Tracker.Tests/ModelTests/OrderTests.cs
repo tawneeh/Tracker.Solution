@@ -38,7 +38,7 @@ namespace Tracker.Tests
       Order newOrder = new Order(title, description, price, date);
       List<Order> newList = new List<Order> { newOrder };
       List<Order> result = Order.GetAll();
-      Assert.AreEqual(newList, result);
+      CollectionAssert.AreEqual(newList, result);
     }
 
   }
