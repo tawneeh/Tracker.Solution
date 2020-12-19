@@ -14,7 +14,7 @@ namespace Tracker.Controllers
       return View(vendor);
     }
 
-    [HttpGet("/vendors/{vendorId}/orders/{orderId}")] // not showing dynamic order details
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
