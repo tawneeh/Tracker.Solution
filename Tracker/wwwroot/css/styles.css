@@ -8,18 +8,21 @@ h1 {
 
 h4 {
   font-style: italic;
-  color: purple;
+}
+
+a {
+
 }
 
 .button {
-  background-color: lightblue;
-  color: black;
-  border: 2px solid blueviolet;
-  border-radius: 8px;
+  background-color: blueviolet;
+  font-family: Times;
+  color: white;
+  border-radius: 6px;
   transition-duration: 0.4s;
 }
 
 .button:hover {
-  background-color: blueviolet;
+  background-color: black;
   color: whitesmoke;
 }
