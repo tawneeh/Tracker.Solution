@@ -6,12 +6,12 @@
 
 <p>Vendor Description: @Model["vendor"].Description</p>
 
-<ol>
+<ul>
 @foreach (var order in @Model["orders"])
 {
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
 }
-</ol>
+</ul>
 
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new Order</a></p>
 <p><a href='/vendors'>Return to Vendor list</a></p>
