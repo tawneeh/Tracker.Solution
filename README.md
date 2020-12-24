@@ -21,9 +21,10 @@ Open by Downloading or Cloning
 * Or clone the repository
 
 Setup Instructions
-* Navigate to the Tracker project directory and type `dotnet restore` into the terminal
-* Then, type `dotnet build` into the terminal followed by `dotnet run`
+* Navigate to Tracker.Solution/Tracker and type `dotnet restore` into the terminal
+* Then, in the same project folder, type `dotnet build` into the terminal followed by `dotnet run`
 * Peruse this application at your leisure 
+* If you would like to run tests, navigate to Tracker.Tests in the terminal and type `dotnet test`
 
 ## Known Bugs
 
